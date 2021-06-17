@@ -12,7 +12,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-ul,
+h1,h2,h3,ul,
 li {
   margin: 0;
   padding: 0;
@@ -60,6 +60,7 @@ li {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.03em;
   margin: 0;
   margin-left: 93px;
   padding: 0;
@@ -90,6 +91,7 @@ li {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  letter-spacing: 0.03em;
   color: var(--contacts-text);
   list-style: none;
   align-items: center;
@@ -139,6 +141,7 @@ li {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bg-color);
   width: 696px;
@@ -162,7 +165,7 @@ li {
 }
 /* Наши сильные стороны */
 .work {
-  padding: 94px 0;
+  padding-top: 94px;
 }
 .work .item {
   list-style: none;
@@ -262,6 +265,7 @@ li {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  margin-bottom: 50px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--lead-text-color);
@@ -314,6 +318,13 @@ li {
 .icon-line .icon:hover {
   fill: currentColor;
 }
+/* .icon-line .link {
+  text-decoration: none;
+  color: var(--icon);
+}
+.icon-line .link:hover {
+  color: var(--bg-color);
+} */
 /* Подвал */
 .footer {
   background: var(--hero);
@@ -350,7 +361,7 @@ li {
 .filtr {
   padding-top: 94px;
 }
-.filtr .line {
+.filtr .line-filtr {
   list-style: none;
   display: flex;
   padding: 0;
@@ -358,7 +369,7 @@ li {
   margin-left: auto;
   margin-right: auto;
 }
-.filtr .item:not(:first-child) {
+.filtr .item-filtr:not(:first-child) {
   margin-left: 8px;
 }
 .filtr .button {
@@ -394,24 +405,24 @@ li {
 .container-product {
   display: flex;
 
-  width: 1225px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding: 0px 15px;
 }
-.product .line {
+.product .line-product {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
-.product .item {
+.product .item-product {
   margin-bottom: 30px;
   margin-right: 30px;
   background: var(--bg-color);
 }
-.product .item:nth-child(3n) {
+.product .item-product:nth-child(3n) {
   margin-right: 0;
 }
 .product .images {
