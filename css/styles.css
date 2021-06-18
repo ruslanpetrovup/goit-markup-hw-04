@@ -5,6 +5,7 @@
   --contacts-text: #757575;
   --hero: #2f303a;
   --footer-link: rgba(255, 255, 255, 0.6);
+  --footer-icon: rgba(255, 255, 255, 0.1);
   --filtr: #f5f4fa;
   --border-color: #ececec;
   --icon: #afb1b8;
@@ -16,7 +17,8 @@ h1,
 h2,
 h3,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -244,12 +246,12 @@ li {
 .team .images {
   display: block;
 }
-.team .line {
+.team .team-line {
   display: flex;
   margin: 0;
   padding: 0;
 }
-.team .item {
+.team .team-item {
   list-style: none;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -257,7 +259,7 @@ li {
   text-align: center;
   overflow: hidden;
 }
-.team .item:not(:first-child) {
+.team .team-item:not(:first-child) {
   margin-left: 30px;
 }
 .team .title-lead {
@@ -296,19 +298,18 @@ li {
   justify-content: center;
   margin-top: 16px;
 }
-.icon-line .item-icon {
-  padding: 12px 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--icon);
-}
 .icon-line .item-icon:not(:first-child) {
   margin-left: 10px;
 }
-.icon-line .item-icon:hover {
-  color: var(--bg-color);
+.icon-line .icon-link {
+  display: flex;
+  padding: 12px 12px;
+  color: var(--icon);
+}
+.icon-line .icon-link:hover {
   background-color: var(--second-text-color);
+  color: var(--bg-color);
+  border-radius: 50%;
 }
 .icon-line .icon {
   width: 20px;
@@ -319,40 +320,52 @@ li {
 .icon-line .icon:hover {
   fill: currentColor;
 }
-/* .icon-line .link {
-  text-decoration: none;
-  color: var(--icon);
-}
-.icon-line .link:hover {
-  color: var(--bg-color);
-} */
+
 /* Логотопиты компаний */
+.company {
+  padding: 94px 0;
+}
 .company .title {
   text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--lead-text-color);
 }
 .company-line {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 50px;
 }
-.company-item {
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+.company-item:not(:first-child) {
+  margin-left: 30px;
 }
 .company-link {
   display: flex;
   width: 170px;
+  border: 1px solid var(--icon);
+  border-radius: 4px;
   height: 92px;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  color: var(--icon);
+}
+.company-link:hover {
+  color: var(--second-text-color);
+  border-color: var(--second-text-color);
 }
 .company .icon {
-  width: 168px;
-  height: 60px;
-  align-items: center;
+  fill: currentColor;
+  height: 50px;
 }
+.company .icon:hover {
+  fill: currentColor;
+}
+/* .company .icon {
+  fill: currentColor;
+} */
 /* Подвал */
 .footer {
   background: var(--hero);
@@ -384,6 +397,42 @@ li {
   color: var(--footer-link);
   text-decoration: none;
   margin-top: 10px;
+}
+.soc-footer {
+  margin-left: 70px;
+}
+.footer-line {
+  display: flex;
+  margin-top: 20px;
+}
+.footer-item:not(:first-child) {
+  margin-left: 10px;
+}
+.footer-link {
+  display: flex;
+  padding: 12px 12px;
+  background-color: var(--footer-icon);
+  border-radius: 50%;
+  color: var(--bg-color);
+}
+.footer-link:hover {
+  background-color: var(--second-text-color);
+}
+.footer-icon {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  fill: currentColor;
+}
+.text-footer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color);
 }
 /* Фильтр */
 .filtr {
@@ -452,6 +501,10 @@ li {
 }
 .product .item-product:nth-child(3n) {
   margin-right: 0;
+}
+.item-product:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .product .images {
   display: block;
