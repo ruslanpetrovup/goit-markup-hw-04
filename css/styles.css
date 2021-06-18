@@ -325,6 +325,34 @@ li {
 .icon-line .link:hover {
   color: var(--bg-color);
 } */
+/* Логотопиты компаний */
+.company .title {
+  text-align: center;
+}
+.company-line {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.company-item {
+  display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.company-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.company .icon {
+  width: 41px;
+  height: 50px;
+  align-items: center;
+}
 /* Подвал */
 .footer {
   background: var(--hero);
