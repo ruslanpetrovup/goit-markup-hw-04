@@ -135,8 +135,11 @@ p {
   padding: 200px 0;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero.jpg);
-  background-size: cover;
   background-position: 50% 50%;
+  background-size: cover;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .banner .title {
   font-size: 44px;
